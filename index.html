@@ -2,86 +2,61 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <title>Clan NDA x SONA</title>
+  <title>FAMILY NDA x SONA</title>
   <style>
     body {
       margin: 0;
+      padding: 0;
       font-family: 'Arial', sans-serif;
       color: white;
-      background: url('https://i.postimg.cc/k5WtVm53/20250922-082135.jpg') no-repeat center center fixed;
-      background-size: cover;
+      background: linear-gradient(-45deg, #1a1a1a, #2c003e, #000000, #2c003e);
+      background-size: 400% 400%;
+      animation: backgroundFlow 15s ease infinite;
       text-align: center;
     }
 
-    .overlay {
-      background-color: rgba(0, 0, 0, 0.7);
-      padding: 30px;
-      min-height: 100vh;
+    @keyframes backgroundFlow {
+      0% {background-position: 0% 50%;}
+      50% {background-position: 100% 50%;}
+      100% {background-position: 0% 50%;}
     }
 
-    h1 {
-      color: cyan;
-      margin-bottom: 20px;
-    }
-
-    button {
-      margin: 10px;
-      padding: 15px 30px;
-      border: none;
-      border-radius: 10px;
-      font-size: 16px;
+    header {
+      padding: 30px 10px;
+      font-size: 26px;
       font-weight: bold;
-      cursor: pointer;
+      color: #00ffff;
+      text-shadow: 0 0 10px #ff0044;
     }
 
-    #chefs, #membres {
-      display: none;
-      margin-top: 30px;
-    }
-
-    .chefs-btn {
-      background: #ff007f;
+    .btn {
+      display: inline-block;
+      margin: 15px;
+      padding: 16px 28px;
+      font-size: 17px;
+      background-color: #ff0044;
       color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      text-decoration: none;
+      box-shadow: 0 0 10px #ff0044;
+      transition: transform 0.2s, background-color 0.3s;
     }
 
-    .membres-btn {
-      background: #333;
-      color: cyan;
+    .btn:hover {
+      background-color: #cc0036;transform: scale(1.05);
     }
   </style>
 </head>
 <body>
-  <div class="overlay">
-    <h1>𒁂🧟⃝𝄞𝐅𝐀𝐌𝐈𝐋𝐘🍷𝐍𝐃𝐀 𝐗 𝐒𝐎𝐍𝐀🩸⚜️̥⃟𒁂🧟⃝≛⃝∰🩸—</h1>
 
-<a href="chefs.html">
-  <button>Chefs Du Clan NDA x SONA</button>
-</a>
+  <header>♛👑 FAMILY 🍷 NDA X SONA 🔥⚜️🕯️💀</header>
 
-<a href="membres.html">
-  <button>Membres Du Clan NDA x SONA</button>
-</a>
-    
-<a href="actualités.html">
-  <button>Actualités Du Clan NDA x SONA</button>
-</a>
-    <a href="galerie.html">
-  <button>Gallerie Du Clan NDA x SONA</button>
-    </a>
-    
-  <script>
-    function afficher(section) {
-      document.getElementById('chefs').style.display = 'none';
-      document.getElementById('membres').style.display = 'none';
-      document.getElementById(section).style.display = 'block';
-    }
+  <a href="chefs.html" class="btn">Chefs Du Clan NDA x SONA</a>
+  <a href="membres.html" class="btn">Membres Du Clan NDA x SONA</a>
+  <a href="actualités.html" class="btn">Actualités Du Clan</a>
+  <a href="galerie.html" class="btn">Gallerie Du Clan</a>
 
-    // Afficher "chefs" par défaut
-    afficher('chefs');
-  </script>
-    <audio controls autoplay loop>
-    <source src="https://github.com/thompsontcholvens-beep/NDAxSONA-family-/blob/main/AUD-20250930-WA0346.mp3" type="audio/mpeg">
-    Ton navigateur ne supporte pas l’audio HTML5.
-  </audio>
 </body>
 </html>
